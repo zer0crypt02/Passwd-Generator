@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şifre Üreticisi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Şifre Üreticisi</h2>
+
+        <label for="length">Şifre Uzunluğu:</label>
+        <input type="number" id="length" min="4" max="32" value="12">
+
+        <label for="complexity">Karmaşıklık Seviyesi:</label>
+        <select id="complexity">
+            <option value="easy">Kolay (Sadece Harfler)</option>
+            <option value="medium" selected>Orta (Harfler ve Rakamlar)</option>
+            <option value="hard">Zor (Harfler, Rakamlar ve Özel Karakterler)</option>
+        </select>
+
+        <button onclick="generatePassword()">Şifre Üret</button>
+
+        <div id="generated-password" class="show">Şifreniz burada görünecek</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
